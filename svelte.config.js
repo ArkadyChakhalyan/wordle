@@ -4,9 +4,7 @@ import adapter from '@sveltejs/adapter-static';
 const config = {
     preprocess: vitePreprocess(),
     kit: {
-        adapter: adapter({
-            fallback: '404.html'
-        }),
+        adapter: adapter(),
         paths: {
             base: '/wordle'
         }
