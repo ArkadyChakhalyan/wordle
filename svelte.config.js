@@ -8,7 +8,7 @@ const config = {
             fallback: '404.html'
         }),
         paths: {
-            base: '/wordle/'
+            base: '/wordle'
         }
     }
 };
