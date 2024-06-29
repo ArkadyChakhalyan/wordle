@@ -1,0 +1,20 @@
+{
+  "name": "5letters",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^3.1.1",
+    "@types/uuid": "^10.0.0",
+    "svelte": "^4.2.18",
+    "vite": "^5.3.1"
+  },
+  "dependencies": {
+    "uuid": "^10.0.0"
+  }
+}

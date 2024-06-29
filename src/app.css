@@ -1,0 +1,51 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color-scheme: light dark;
+
+    --box-shadow: 0 .8px 3px #0000001d, 0 4px 16px #0000003b;
+    --color-text-button-primary: #fff;
+
+    /*light theme*/
+    --color-bg-light: #fff;
+    --color-bg-alternative-light: #c2cdd6;
+    --color-bg-alternative-2-light: #fff;
+    --color-text-light: #213547;
+    --color-text-alternative-light: #212121;
+    --color-primary-light: #d43008;
+    --color-secondary-light: #d49708;
+
+    /*dark theme*/
+    --color-bg-dark: #242424;
+    --color-bg-alternative-dark: #666666;
+    --color-bg-alternative-2-dark: #2e2e2e;
+    --color-text-dark: rgba(255, 255, 255, 0.87);
+    --color-text-alternative-dark: #e6e6e6;
+    --color-primary-dark: #f96743;
+    --color-secondary-dark: #f9c343;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 320px;
+    min-height: 100vh;
+    margin: 0;
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-dark);
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.light body {
+    background-color: var(--color-bg-light);
+    color: var(--color-text-light);
+}
