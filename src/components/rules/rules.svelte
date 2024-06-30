@@ -49,7 +49,8 @@
         position: fixed;
         right: 24px;
         bottom: 24px;
-        height: 32px;
+        min-height: 32px;
+        max-height: 32px;
         min-width: 32px;
         max-width: 32px;
         border: 2px solid var(--color-text-dark);

@@ -86,7 +86,7 @@
     }
     @media (max-width: 460px) {
         .key {
-            height: 28px;
+            height: 32px;
             min-width: 20px;
             max-width: 20px;
             font-size: 12px;
