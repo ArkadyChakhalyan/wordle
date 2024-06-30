@@ -7,6 +7,9 @@ const config = {
         adapter: adapter(),
         paths: {
             base: '/wordle/'
+        },
+        files: {
+            lib: './src/lib/'
         }
     }
 };

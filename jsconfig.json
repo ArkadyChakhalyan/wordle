@@ -11,8 +11,8 @@
     "skipLibCheck": true,
     "checkJs": true,
     "paths": {
-      "$lib":["static/"],
-      "$lib/*":["static/*"]
+      "$lib":["src/lib/"],
+      "$lib/*":["src/lib/*"]
     }
   },
   "include": ["src/**/*.d.ts", "src/**/*.js", "src/**/*.ts", "src/**/*.svelte"]

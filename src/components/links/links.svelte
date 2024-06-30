@@ -2,7 +2,7 @@
     import { fade } from 'svelte/transition';
     import { onMount } from 'svelte';
     import { GITHUB_LINK } from '../../constants';
-    import github from '$lib/images/github.png';
+    import github from '../../lib/images/github.png';
 
     let show: boolean;
 
