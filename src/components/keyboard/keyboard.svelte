@@ -126,7 +126,7 @@
             margin-bottom: 16px;
         }
         .submit {
-            height: 48px;
+            height: 44px;
             margin-bottom: 2px;
         }
     }
