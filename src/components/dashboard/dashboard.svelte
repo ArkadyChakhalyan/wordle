@@ -182,7 +182,7 @@
         background: var(--color-bg-alternative-dark);
         color: var(--color-text-alternative-dark);
         font-weight: bold;
-        font-size: 1.5rem;
+        font-size: 24px;
         user-select: none;
     }
     .letter.guessed {

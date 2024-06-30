@@ -56,7 +56,7 @@
         border-radius: 50%;
         background: var(--color-primary-light);
         transition: all ease-in-out 0.25s;
-        font-size: 0.6rem;
+        font-size: 8px;
         color: var(--color-text-button-primary);
     }
     .switch input {

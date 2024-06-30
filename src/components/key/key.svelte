@@ -34,7 +34,7 @@
         background: var(--color-bg-alternative-dark);
         color: var(--color-text-alternative-dark);
         opacity: 0.9;
-        font-size: 1rem;
+        font-size: 16px;
         border: none;
         border-radius: 4px;
         font-weight: normal;
@@ -88,7 +88,7 @@
         .key {
             height: 28px;
             min-width: 20px;
-            font-size: 0.5rem;
+            font-size: 12px;
         }
     }
 </style>

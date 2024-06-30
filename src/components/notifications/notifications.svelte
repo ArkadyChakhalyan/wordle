@@ -67,7 +67,7 @@
         background: var(--color-bg-alternative-2-dark);
         color: var(--color-text-dark);
         box-shadow: var(--box-shadow);
-        font-size: 0.9rem;
+        font-size: 14px;
         user-select: none;
     }
     .avatar {
@@ -81,7 +81,7 @@
         height: 32px;
         border-radius: 50%;
         border: 2px solid var(--color-text-dark);
-        font-size: 0.9rem;
+        font-size: 14px;
         color: var(--color-text-dark);
         font-weight: bold;
         background: var(--color-bg-alternative-2-dark);

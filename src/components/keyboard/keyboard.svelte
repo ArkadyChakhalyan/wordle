@@ -76,7 +76,7 @@
         color: var(--color-text-button-primary);
         border-radius: 4px;
         border: none;
-        font-size: 0.9rem;
+        font-size: 14px;
         transition: all ease-in-out 0.2s;
         cursor: pointer;
         overflow: hidden;

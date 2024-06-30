@@ -54,7 +54,7 @@
         max-width: 32px;
         border: 2px solid var(--color-text-dark);
         border-radius: 50%;
-        font-size: 1rem;
+        font-size: 16px;
         background: none;
         cursor: pointer;
         opacity: 0.9;
@@ -74,7 +74,7 @@
     }
     .text {
         margin: 0;
-        font-size: 0.8rem;
+        font-size: 12px;
         color: var(--color-text-alternative-dark);
     }
     .rules {
