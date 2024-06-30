@@ -7,12 +7,10 @@
     import { onMount, SvelteComponent } from 'svelte';
     import NotificationsHelper from './helpers/notificationsHelper.svelte';
     import { fly } from 'svelte/transition';
-    import { getIsIOS } from './selectors/getIsIOS';
 
     let notificationsHelper: SvelteComponent, show: boolean;
 
     onMount(() => {
-        if (getIsIOS()) document.documentElement.classList.add('ios');
         show = true;
         setTimeout(() => {
             NOTIFICATIONS_WELCOME.map((notification, idx) => {

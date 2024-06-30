@@ -91,9 +91,4 @@
             font-size: 0.8rem;
         }
     }
-    :global(.ios) .key {
-        height: 28px;
-        min-width: 20px;
-        font-size: 0.8rem;
-    }
 </style>
