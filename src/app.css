@@ -38,6 +38,10 @@ body {
     overflow: hidden;
 }
 
+body * {
+    touch-action: manipulation;
+}
+
 #app {
     display: flex;
     flex-direction: column;
