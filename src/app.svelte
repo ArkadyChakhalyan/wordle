@@ -12,12 +12,6 @@
     let notificationsHelper: SvelteComponent, show: boolean;
 
     onMount(() => {
-        if (!document.startViewTransition) {
-            updateTheDOMSomehow();
-            return;
-        }
-        document.startViewTransition(() => updateTheDOMSomehow());
-
         show = true;
         setTimeout(() => {
             NOTIFICATIONS_WELCOME.map((notification, idx) => {
@@ -26,6 +20,12 @@
                 }, NOTIFICATION_DEFAULT_TIMEOUT * 0.25 * idx);
             });
         }, NOTIFICATION_DEFAULT_TIMEOUT * 0.25);
+
+        if (!document.startViewTransition) {
+            updateTheDOMSomehow();
+            return;
+        }
+        document.startViewTransition(() => updateTheDOMSomehow());
     });
 </script>
 
