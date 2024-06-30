@@ -3,6 +3,7 @@
     import Rules from './components/rules/rules.svelte';
     import Notifications from './components/notifications/notifications.svelte';
     import Switch from './components/switch/switch.svelte';
+    import Links from './components/links/links.svelte';
     import { NAME, NOTIFICATION_DEFAULT_TIMEOUT, NOTIFICATIONS_WELCOME } from './constants.js';
     import { onMount, SvelteComponent } from 'svelte';
     import NotificationsHelper from './helpers/notificationsHelper.svelte';
@@ -31,6 +32,7 @@
 <NotificationsHelper bind:this={notificationsHelper} />
 <Switch />
 <Rules />
+<Links />
 {#if show}
     <h1 class='title' in:fly={{ duration: 400, delay: 250, x: -64, opacity: 0 }}>
         <span class="highlight">{NAME.slice(0, 1)}</span>{NAME.slice(1)}

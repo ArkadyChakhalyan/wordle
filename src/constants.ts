@@ -60,3 +60,5 @@ export const NOTIFICATION_LOST = 'Ты не отгадал мое слово';
 
 export const PLAYED_WORDS_LS = 'PLAYED_WORDS';
 export const APP_THEME_LS = 'APP_THEME';
+
+export const GITHUB_LINK = 'https://github.com/ArkadyChakhalyan/wordle';

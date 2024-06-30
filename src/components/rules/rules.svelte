@@ -113,17 +113,17 @@
         padding-left: 14px;
         text-indent: -6px;
     }
-    :global(.light ) .info {
-        border: 2px solid var(--color-text-light);
+    :global(.light) .info {
+        border-color: var(--color-text-light);
         color: var(--color-text-light);
     }
-    :global(.light ) .title {
+    :global(.light) .title {
         color: var(--color-text-alternative-light);
     }
-    :global(.light ) .text {
+    :global(.light) .text {
         color: var(--color-text-alternative-light);
     }
-    :global(.light ) .rules {
+    :global(.light) .rules {
         background: var(--color-bg-alternative-2-light);
     }
     @media (max-width: 460px) {
