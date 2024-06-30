@@ -46,6 +46,9 @@
 
 <style>
     .info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         position: fixed;
         right: 24px;
         bottom: 24px;

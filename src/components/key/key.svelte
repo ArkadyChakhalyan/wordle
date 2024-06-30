@@ -86,9 +86,8 @@
     }
     @media (max-width: 460px) {
         .key {
-            height: 32px;
-            min-width: 20px;
-            max-width: 20px;
+            min-width: 22px;
+            max-width: 22px;
             font-size: 12px;
         }
     }
