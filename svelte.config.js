@@ -6,7 +6,7 @@ const config = {
     kit: {
         adapter: adapter(),
         paths: {
-            base: '/wordle'
+            base: '/wordle/'
         }
     }
 };
