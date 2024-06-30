@@ -23,7 +23,7 @@
         class:opened
         bind:this={button}
         on:click={() => opened = !opened}
-        in:fade={{ duration: 200, opacity: 0, delay: 400 }}
+        in:fade={{ duration: 200, delay: 400 }}
     >
         i
     </button>

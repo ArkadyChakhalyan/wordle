@@ -3,23 +3,20 @@
     import { onMount } from 'svelte';
     import { GITHUB_LINK } from '../../constants';
 
-    let button: HTMLElement, show: boolean;
+    let show: boolean;
 
     const onClick = () => {
         window.open(GITHUB_LINK, '_blank');
     };
 
-    onMount(() => {
-        show = true;
-    });
+    onMount(() => show = true);
 </script>
 
 {#if show}
     <button
         class="link"
-        bind:this={button}
         on:click={onClick}
-        in:fade={{ duration: 200, opacity: 0, delay: 400 }}
+        in:fade={{ duration: 200, delay: 400 }}
     >
         <img src="/wordle/public/images/github.png" alt="github">
     </button>
