@@ -31,7 +31,7 @@ body {
     align-items: center;
     justify-content: center;
     min-width: 320px;
-    min-height: 100svh;
+    height: 100svh;
     margin: 0;
     background-color: var(--color-bg-dark);
     color: var(--color-text-dark);
@@ -52,7 +52,7 @@ body * {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100svh;
+    height: 100svh;
     max-width: calc(100% - 32px);
 }
 
