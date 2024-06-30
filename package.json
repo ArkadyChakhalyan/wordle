@@ -1,6 +1,6 @@
 {
   "name": "wordle",
-  "homepage": "http://arkadychakhalyan.github.io/wordle",
+  "homepage": "https://arkadychakhalyan.github.io/wordle",
   "private": true,
   "version": "0.0.0",
   "type": "module",
