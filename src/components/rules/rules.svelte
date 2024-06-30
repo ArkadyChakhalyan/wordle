@@ -66,6 +66,9 @@
     .info.opened {
         opacity: 1;
     }
+    .info:focus-visible {
+        outline: none;
+    }
     .title {
         margin: 0;
         margin-bottom: 12px;

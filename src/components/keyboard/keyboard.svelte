@@ -88,6 +88,9 @@
         color: var(--color-text-alternative-dark);
         pointer-events: none;
     }
+    .submit:focus-visible {
+        outline: none;
+    }
     .submit:focus, .submit:hover {
         box-shadow: var(--box-shadow);
     }

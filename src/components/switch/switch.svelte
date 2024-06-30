@@ -43,6 +43,9 @@
     .switch:focus-within {
         box-shadow: var(--box-shadow);
     }
+    .switch:focus-within:before {
+        opacity: 1;
+    }
     .switch:before {
         content: 'L';
         display: flex;
@@ -58,6 +61,7 @@
         transition: all ease-in-out 0.25s;
         font-size: 8px;
         color: var(--color-text-button-primary);
+        opacity: 0.8;
     }
     .switch input {
         width: 100%;
@@ -80,6 +84,13 @@
             top: 34px;
             left: 16px;
             right: unset;
+            height: 28px;
+            width: 52px;
+            border-radius: 14px;
+        }
+        .switch:before {
+            height: 24px;
+            width: 24px;
         }
     }
 </style>

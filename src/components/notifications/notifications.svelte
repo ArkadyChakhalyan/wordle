@@ -117,6 +117,7 @@
     }
     @media (max-width: 460px) {
         .notifications {
+            width: calc(100% - 32px);
             gap: 6px;
         }
         .notification {
