@@ -125,5 +125,8 @@
             justify-content: flex-end;
             margin-bottom: 16px;
         }
+        .submit {
+            height: 48px;
+        }
     }
 </style>
