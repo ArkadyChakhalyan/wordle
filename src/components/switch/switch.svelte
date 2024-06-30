@@ -91,6 +91,7 @@
         .switch:before {
             height: 24px;
             width: 24px;
+            font-size: 10px;
         }
     }
 </style>

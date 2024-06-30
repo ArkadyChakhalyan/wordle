@@ -89,6 +89,7 @@
         border-radius: 8px;
         width: 320px;
         background: var(--color-bg-alternative-2-dark);
+        z-index: 5;
     }
     .rule {
         display: flex;
@@ -97,8 +98,8 @@
         margin-top: 12px;
     }
     .rule .text {
-        padding-left: 16px;
-        text-indent: -10px;
+        padding-left: 14px;
+        text-indent: -6px;
     }
     :global(.light ) .info {
         border: 2px solid var(--color-text-light);
