@@ -21,7 +21,7 @@
         on:click={onClick}
         in:fade={{ duration: 200, opacity: 0, delay: 400 }}
     >
-        <img src="public/github.png" alt="github">
+        <img src="/wordle/public/images/github.png" alt="github">
     </button>
 {/if}
 
