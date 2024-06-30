@@ -2,6 +2,7 @@
     import { fade } from 'svelte/transition';
     import { onMount } from 'svelte';
     import { GITHUB_LINK } from '../../constants';
+    import github from '$lib/images/github.png';
 
     let show: boolean;
 
@@ -18,7 +19,7 @@
         on:click={onClick}
         in:fade={{ duration: 200, delay: 400 }}
     >
-        <img src="/wordle/public/images/github.png" alt="github">
+        <img src={github} alt="github">
     </button>
 {/if}
 
