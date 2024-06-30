@@ -60,6 +60,7 @@
         opacity: 0.9;
         user-select: none;
         color: var(--color-text-dark);
+        letter-spacing: 0;
     }
     .info:hover,
     .info:focus,

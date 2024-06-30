@@ -40,6 +40,7 @@
         font-weight: normal;
         user-select: none;
         transition: all ease-in-out 0.2s;
+        letter-spacing: 0;
     }
     .key:hover,.key:focus {
         opacity: 1;
