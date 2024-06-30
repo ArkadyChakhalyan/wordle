@@ -30,7 +30,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: calc(100% - 32px);
     min-width: 320px;
     min-height: 100svh;
     margin: 0;
@@ -44,7 +43,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 100svh;
+    max-width: calc(100% - 32px);
 }
 
 .light body {
