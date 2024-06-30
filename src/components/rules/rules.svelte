@@ -50,7 +50,8 @@
         right: 24px;
         bottom: 24px;
         height: 32px;
-        width: 32px;
+        min-width: 32px;
+        max-width: 32px;
         border: 2px solid var(--color-text-dark);
         border-radius: 50%;
         font-size: 1rem;

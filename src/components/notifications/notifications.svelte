@@ -105,8 +105,9 @@
     }
     @media (max-width: 1100px) {
         .notifications {
-            right: 16px;
             top: 16px;
+            width: fit-content;
+            max-width: calc(100% - 32px);
             bottom: unset;
             padding: 0;
         }

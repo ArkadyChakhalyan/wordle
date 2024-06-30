@@ -30,11 +30,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: calc(100% - 32px);
     min-width: 320px;
-    min-height: 100vh;
+    min-height: 100svh;
     margin: 0;
     background-color: var(--color-bg-dark);
     color: var(--color-text-dark);
+    overflow: hidden;
 }
 
 #app {

@@ -13,7 +13,8 @@
     const onThemeToggle = () => {
         theme = theme === EAppTheme.LIGHT ? EAppTheme.DARK : EAppTheme.LIGHT;
         localStorage.setItem(APP_THEME_LS, JSON.stringify(theme));
-        document.documentElement.className = theme === EAppTheme.LIGHT ? 'light' : 'dark';
+        document.documentElement.classList.remove(theme === EAppTheme.LIGHT ? 'dark' : 'light');
+        document.documentElement.classList.add(theme === EAppTheme.LIGHT ? 'light' : 'dark');
     };
 </script>
 

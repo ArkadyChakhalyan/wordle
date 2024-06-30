@@ -59,15 +59,15 @@
         pointer-events: none;
         opacity: 1;
     }
-    :global(.light ) .key {
+    :global(.light) .key {
         background: var(--color-bg-alternative-light);
         color: var(--color-text-alternative-light);
     }
-    :global(.light ) .key.guessed {
+    :global(.light) .key.guessed {
         background: var(--color-secondary-light);
         color: var(--color-text-button-primary);
     }
-    :global(.light ) .key.found {
+    :global(.light) .key.found {
         background: var(--color-primary-light);
         color: var(--color-text-button-primary);
     }
@@ -90,5 +90,10 @@
             min-width: 20px;
             font-size: 0.8rem;
         }
+    }
+    :global(.ios) .key {
+        height: 28px;
+        min-width: 20px;
+        font-size: 0.8rem;
     }
 </style>
