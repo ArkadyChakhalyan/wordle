@@ -3,10 +3,12 @@
     import { EAppTheme } from '../../types/types';
     import { APP_THEME_LS } from '../../constants';
     import { onMount } from 'svelte';
+    import { fade } from 'svelte/transition';
 
-    let theme = getAppTheme();
+    let show: boolean, theme = getAppTheme();
 
     onMount(() => {
+        show = true;
         document.documentElement.className = theme === EAppTheme.LIGHT ? 'light' : 'dark';
     });
 
@@ -17,16 +19,19 @@
     };
 </script>
 
-<div
-    class="switch"
-    class:checked={theme === EAppTheme.DARK}
->
-    <input
-        on:click={onThemeToggle}
-        type="checkbox"
-        checked={theme === EAppTheme.DARK}
-    />
-</div>
+{#if show}
+    <div
+        class="switch"
+        class:checked={theme === EAppTheme.DARK}
+        in:fade={{ duration: 200, opacity: 0, delay: 400 }}
+    >
+        <input
+            on:click={onThemeToggle}
+            type="checkbox"
+            checked={theme === EAppTheme.DARK}
+        />
+    </div>
+{/if}
 
 <style>
     .switch {

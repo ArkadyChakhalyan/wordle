@@ -1,25 +1,33 @@
 <script lang="ts">
-    import { fly } from 'svelte/transition';
+    import { fly, fade } from 'svelte/transition';
     import Key from '../key/key.svelte';
     import { BASIC_RULES, RULE_KEY, RULES_REST, RULES_TITLE } from '../../constants';
     import { clickOutside } from '../../customEvents/clickOutside';
+    import { onMount } from 'svelte';
 
-    let button: HTMLElement, opened: boolean;
+    let button: HTMLElement, opened: boolean, show: boolean;
 
     const onClickOutside = (e: any) => {
         if (e.detail === button) return;
         opened = false;
     };
+
+    onMount(() => {
+        show = true;
+    });
 </script>
 
-<button
-    class="info"
-    class:opened
-    bind:this={button}
-    on:click={() => opened = !opened}
->
-    i
-</button>
+{#if show}
+    <button
+        class="info"
+        class:opened
+        bind:this={button}
+        on:click={() => opened = !opened}
+        in:fade={{ duration: 200, opacity: 0, delay: 400 }}
+    >
+        i
+    </button>
+{/if}
 {#if opened}
     <div
         class="rules"
