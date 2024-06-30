@@ -36,11 +36,12 @@ body {
     background-color: var(--color-bg-dark);
     color: var(--color-text-dark);
     overflow: hidden;
-    -webkit-text-size-adjust: 100%;
+    text-size-adjust:none;
 }
 
 body * {
     touch-action: manipulation;
+    text-size-adjust:none;
 }
 
 #app {
