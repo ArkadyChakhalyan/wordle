@@ -31,10 +31,8 @@
         position: fixed;
         right: 64px;
         bottom: 24px;
-        min-height: 32px;
-        max-height: 32px;
-        min-width: 32px;
-        max-width: 32px;
+        height: 32px;
+        width: 32px;
         padding: 0;
         border: 2px solid var(--color-text-dark);
         border-radius: 50%;
@@ -51,7 +49,8 @@
         outline: none;
     }
     .link img {
-        width: 29px;
+        width: 28px;
+        height: 28px;
     }
     :global(.light) .link {
         border-color: var(--color-text-light);

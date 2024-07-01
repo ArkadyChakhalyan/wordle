@@ -45,10 +45,10 @@
         border-radius: 12px;
         overflow: hidden;
     }
-    .switch:focus-within {
+    .switch:focus-within, .switch:hover {
         box-shadow: var(--box-shadow);
     }
-    .switch:focus-within:before {
+    .switch:focus-within:before, .switch:hover:before {
         opacity: 1;
     }
     .switch:before {

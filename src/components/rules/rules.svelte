@@ -60,10 +60,9 @@
         position: fixed;
         right: 24px;
         bottom: 24px;
-        min-height: 32px;
-        max-height: 32px;
-        min-width: 32px;
-        max-width: 32px;
+        height: 32px;
+        width: 32px;
+        padding: 0;
         border: 2px solid var(--color-text-dark);
         border-radius: 50%;
         font-size: 16px;

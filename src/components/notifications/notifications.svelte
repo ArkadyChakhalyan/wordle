@@ -4,6 +4,13 @@
     import { fly } from 'svelte/transition';
     import { notifications } from '../../stores/stores.js';
     import { MAX_NOTIFICATIONS_COUNT, MAX_NOTIFICATIONS_COUNT_MOBILE, SHORT_NAME } from '../../constants.js';
+    import { swipe } from 'svelte-gestures';
+
+    const onSwipe = (e: any)  => {
+        if (e.detail.direction === 'top') {
+            $notifications = [];
+        }
+    };
 
     const [send, receive] = crossfade({
         fallback(node, params) {
@@ -27,7 +34,11 @@
     }
 </script>
 
-<div class="notifications">
+<div
+    class="notifications"
+    use:swipe={{ timeframe: 300, minSwipeDistance: 50 }}
+    on:swipe={onSwipe}
+>
     {#each $notifications as notification (notification.id)}
         <div
             class="notification"
@@ -122,6 +133,7 @@
         }
         .notification {
             width: unset;
+            min-height: 32px;
         }
     }
 </style>
