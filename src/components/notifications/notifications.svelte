@@ -36,7 +36,7 @@
 
 <div
     class="notifications"
-    use:swipe={{ timeframe: 300, minSwipeDistance: 50 }}
+    use:swipe={{ timeframe: 300, minSwipeDistance: 40 }}
     on:swipe={onSwipe}
 >
     {#each $notifications as notification (notification.id)}
