@@ -19,6 +19,13 @@
         if (fake) return;
         dispatch('click', key);
     }}
+    on:keydown={e => {
+        if (e.key === 'Space') {
+            dispatch('click', key);
+        } else if (e.key === 'Enter') {
+            e.preventDefault();
+        }
+    }}
 >
     {key}
 </button>
