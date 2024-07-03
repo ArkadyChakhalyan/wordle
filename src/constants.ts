@@ -44,9 +44,9 @@ export const NOTIFICATIONS_WELCOME = [
     NOTIFICATION_WELCOME_1,
     NOTIFICATION_WELCOME_2,
 ];
-export const NOTIFICATION_WORD_NOT_FOUND_1 = 'Я не знаю такого слово';
+export const NOTIFICATION_WORD_NOT_FOUND_1 = 'Я не знаю такого слова';
 export const NOTIFICATION_WORD_NOT_FOUND_2 = 'Хм... Ты уверен, что такое слово существует?';
-export const NOTIFICATION_WORD_NOT_FOUND_3 = 'В моем словаре, такого слово точно нет';
+export const NOTIFICATION_WORD_NOT_FOUND_3 = 'В моем словаре такого слова точно нет';
 export const NOTIFICATION_WORD_NOT_FOUND_4 = 'Давай попробуем еще';
 export const NOTIFICATIONS_WORD_NOT_FOUND = [
     NOTIFICATION_WORD_NOT_FOUND_1,
@@ -57,6 +57,7 @@ export const NOTIFICATIONS_WORD_NOT_FOUND = [
 export const NOTIFICATION_WON = 'Поздравляю, ты победил!';
 export const NOTIFICATION_NEW_GAME = 'Я загадал новое слово';
 export const NOTIFICATION_LOST = 'Ты не отгадал мое слово';
+export const NOTIFICATION_WORD = 'Я загадывал - ';
 
 export const PLAYED_WORDS_LS = 'PLAYED_WORDS';
 export const APP_THEME_LS = 'APP_THEME';

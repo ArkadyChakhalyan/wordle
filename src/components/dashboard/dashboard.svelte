@@ -2,8 +2,8 @@
     import {
         ALLOWED_SYMBOLS,
         DASHBOARD_DEFAULT,
-        EMPTY_ROW, NOTIFICATION_LOST, NOTIFICATION_NEW_GAME,
-        NOTIFICATION_WON,
+        EMPTY_ROW, NOTIFICATION_DEFAULT_TIMEOUT, NOTIFICATION_LOST, NOTIFICATION_NEW_GAME,
+        NOTIFICATION_WON, NOTIFICATION_WORD,
         NOTIFICATIONS_WORD_NOT_FOUND, PLAYED_WORDS_LS
     } from '../../constants.js';
     import { getRandomPlayableWord } from '../../selectors/getRandomPlayableWord.js';
@@ -79,8 +79,12 @@
                 if (activeTry < tries.length - 1) {
                     activeTry += 1;
                 } else {
+                    localStorage.setItem(PLAYED_WORDS_LS, JSON.stringify([...getPlayedWords(), word]));
                     lost = true;
                     notificationsHelper.showNotification(NOTIFICATION_LOST);
+                    setTimeout(() => {
+                        notificationsHelper.showNotification(NOTIFICATION_WORD + `"${word}"`);
+                    }, NOTIFICATION_DEFAULT_TIMEOUT * 0.25);
                 }
             }
         }

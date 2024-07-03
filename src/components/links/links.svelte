@@ -34,7 +34,7 @@
         height: 32px;
         width: 32px;
         padding: 0;
-        border: 2px solid var(--color-text-dark);
+        border: 1px solid var(--color-text-dark);
         border-radius: 50%;
         cursor: pointer;
         opacity: 0.8;
@@ -49,8 +49,8 @@
         outline: none;
     }
     .link img {
-        width: 28px;
-        height: 28px;
+        width: 29px;
+        height: 29px;
     }
     :global(.light) .link {
         border-color: var(--color-text-light);
