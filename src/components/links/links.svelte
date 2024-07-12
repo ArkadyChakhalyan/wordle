@@ -2,7 +2,7 @@
     import { fade } from 'svelte/transition';
     import { onMount } from 'svelte';
     import { GITHUB_LINK } from '../../constants';
-    import github from '../../lib/images/github.png';
+    import github from '../../lib/images/github.svg';
 
     let show: boolean;
 
@@ -34,12 +34,13 @@
         height: 32px;
         width: 32px;
         padding: 0;
-        border: 1px solid var(--color-text-dark);
+        border: 2px solid var(--color-text-dark);
         border-radius: 50%;
         cursor: pointer;
         opacity: 0.8;
         user-select: none;
         background: #fff;
+        transition: all ease-in-out 0.2s;
     }
     .link:hover,
     .link:focus {
@@ -47,10 +48,6 @@
     }
     .link:focus-visible {
         outline: none;
-    }
-    .link img {
-        width: 29px;
-        height: 29px;
     }
     :global(.light) .link {
         border-color: var(--color-text-light);
