@@ -49,6 +49,10 @@
     .link:focus-visible {
         outline: none;
     }
+    .link img {
+        width: 100%;
+        height: 100%;
+    }
     :global(.light) .link {
         border-color: var(--color-text-light);
     }
